@@ -237,7 +237,7 @@ nav label {
         }
 }
 #slider{
-    width: 400px;
+    width: 300px;
     margin: auto;
     line-height: 80;
     margin-top: 80px;
@@ -257,8 +257,7 @@ nav label {
     justify-content: center;
     margin: 0;
     position: relative;
-    animation: slider 10s infinite forwards;
-    transition: ease-in-out;
+    animation: slider 7s alternate-reverse infinite;
  }
  @keyframes slider {
     0%{left: 0;}
