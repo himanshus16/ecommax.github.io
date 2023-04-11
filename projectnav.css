@@ -11,8 +11,6 @@ body{
     display: grid;
 }
 .button-login{
-    /* border: 1px solid rgb(234, 255, 2); */
-    /* box-shadow: 1px 1px 1px 1px rgb(234, 255, 2); */
     padding: 5px;
     margin: auto;
 }
@@ -28,7 +26,6 @@ body{
     width: 100%;
     position: fixed;
     display: flex;
-    /* justify-content: space-evenly; */
     height:fit-content;
     margin: auto;
     padding: 10px;
@@ -45,12 +42,10 @@ body{
     margin-left: 190px;
     text-transform: initial;
     text-decoration: underline;
-    /* border: 1px solid black; */
 }
 nav #check,
 nav label {
     display: none;
-    /* font-size: larger; */
 }
 .nav-bar .search-bar{
     width: 30%;
@@ -67,19 +62,19 @@ nav label {
 .nav-bar ul{
     margin-left: 100px;
 }
-.nav-bar .menu li i{
+.nav-bar .menu li a{
     display: inline-block ;
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     background-color: rgb(240, 236, 236);
     margin: 0 10px 10px 0;
     text-align: center;
-    line-height: 60px;
+    line-height: 40px;
     border-radius: 50%;
     color: rgb(2, 30, 55);
     transition: all .5s ease-in-out;
 }
-.nav-bar .menu li i:hover{
+.nav-bar .menu li a:hover{
     color: white;
     background-color: rgb(2, 30, 55);
     cursor: pointer;
@@ -88,10 +83,8 @@ nav label {
     display: flex;
     font-size: 30px;
     font-weight: bold;
-    /* border: 1px solid black; */
     margin: auto;
     width: 20%;
-    height: fit-content;
     justify-content:space-between;
     color: rgb(205, 10, 10);
 }
@@ -102,17 +95,18 @@ nav label {
     border-bottom: 1px dashed rgb(54, 53, 53);
 }
 .nav-bar .menu i:hover{
-    color: rgb(244, 244, 4);
+    color: rgb(239, 238, 238);
     cursor: pointer;
 }
-@media (max-width: 725px){
+@media (max-width: 825px){
     .nav-bar{
         width: 100%;
-        overflow: hidden;
+        overflow: visible;
+        position: relative;
     }
     .nav-bar .logo{
         margin: auto;
-        font-size: 40px;
+        font-size: 30px;
     }
     .nav-bar .search-bar{
         width: 30%;
@@ -120,13 +114,8 @@ nav label {
         margin: auto;
     }
     .nav-bar .menu{
-        height: 100vh;
-        right: 0;
-        /* background: rgb(171, 191, 211); */
-        overflow: scroll;
-        position: fixed;
-        top: 70px;
-        text-align: center;
+        height: 100px;
+        /* text-align: center; */
     }
     .nav-bar .menu{
         flex-direction:column-reverse;
@@ -135,7 +124,6 @@ nav label {
         align-items: center;
         padding: 0.5rem 0;
         width: 20%;
-        /* border: 1px solid black; */
     }
     .nav-bar label{
         display: inline-block;
@@ -143,17 +131,14 @@ nav label {
         cursor: pointer;
     }
     .nav-bar #check:checked ~ ul{
-        height: 200px;
-        display:flex;
+        height: 260px;
+        display:block;
+        color: white;
         background-color: rgb(2, 30, 55);
-        width: 100%;
+        width: 10%;
     }
-    /* .nav-bar #search:checked ~ .search-bar{
-        height: 100vh;
-        display: inherit;
-    }  */
 }
-@media (max-width: 725px){
+@media (max-width: 625px){
     .nav-bar .search-bar{
         display: none;
     }
@@ -193,9 +178,6 @@ nav label {
     font-weight: bold;
     color: rgb(245, 7, 7);
     margin: auto;
-    /* box-shadow: 0 1px 1px 1px rgb(2, 30, 55),
-                1px 2px 2px 2px rgb(2, 30, 55),
-                2px 3px 3px 2px rgb(2, 30, 55); */
 }
 .cards:hover > .dropdown{
    overflow: hidden;
@@ -243,7 +225,6 @@ nav label {
     margin-top: 80px;
     height: 300px;
     overflow: hidden;
-    /* scroll-snap-type: x mandatory; */
 }
 #slider figure img{
     width: 20%;
@@ -262,20 +243,17 @@ nav label {
  }
  @keyframes slider {
     0%{left: 0;}
-    15%{left: 0;}
-    25%{left: -100%;}
-    40%{left: -100%;}
-    50%{left: -200%;}
-    65%{left: -200%;}
-    75%{left: -300%;}
-    90%{left: -300%;}
-    95%{left: -400%;}
-    100%{left: -10%;}
+    25%{left: -101%;}
+    40%{left: -101%;}
+    50%{left: -201%;}
+    65%{left: -201%;}
+    75%{left: -301%;}
+    90%{left: -301%;}
+    95%{left: -401%;}
+    100%{left: 0%;}
 }
 @media (max-width:975px) {
     #slider{
-    /* width: 90%; */
-    /* margin: auto; */
     line-height: 80;
     margin-top: 80px;
     height: 300px;
@@ -308,10 +286,8 @@ nav label {
     }
 }
 .deals-container{
-    /* position: absolute; */
     width: 100%;
     height: 400px;
-    /* border: 2px solid black; */
     box-shadow: 0 2px gray;
     margin-top: 100px;
     justify-content: space-between;
